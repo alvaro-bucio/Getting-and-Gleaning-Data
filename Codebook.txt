@@ -1,0 +1,36 @@
+==================================================================
+Script: run_analysis.R
+==================================================================
+
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement. 
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive variable names. 
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+==================================================================
+
+Functions:
+
+- as.c.as.num: Cast values to numeric type 
+
+Values:
+
+- activity_labels: factor with labels contained on activity_labels.txt
+- data_labels: factor with labels of the different calculations
+- extract_fratures: logical vector with measurements on the mean & standard deviation for each measurement
+- features: column names from features.txt file
+- id_label: vector containing activities ID and labels
+- tidy_data2: summary of the average from all the columns contained in tidy_data table
+
+Data:
+- X_test: data contained on X_test.txt file
+- X_train: measurements on the mean and standard deviation for each measurement
+- data: Train and Test merged data tables
+- melt_data: Train and Test merged tables with column names and labels
+- subject_test: data contained on subject_test.txt file
+- subject_train: data contained on subject_train.txt file
+- test_data: Column binded data from test files
+- tidy_data: Data table containing the merged data from train and test files processed
+- train_data: Column binded data from train files
+- y_test: data contained on y_test.txt file
+- y_train: data contained on y_train.txt file
